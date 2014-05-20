@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#explanation-txt {
+  color: #b55;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+#svg, #explanation-txt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

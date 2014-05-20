@@ -1,0 +1,45 @@
+<html>
+
+  <!-- 
+      Javascript Balls is a simple client-side JS program to demonstrate basic 
+      graphics using SVG, including very simple collision and wall detection, 
+      static audio playback, and perhaps most interestingly the optional use
+      of the high-resolution timer.  
+
+   -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="SVG balls - JS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Martin Puryear" />
+
+  <link rel="stylesheet" type="text/css" href="js_balls.css" />
+  <script type='text/javascript' src='js_balls.js'></script>
+  
+  <title>Javascript Balls</title>
+</head>
+
+<body>
+
+  <audio id="trash" src="sounds/recycle.wav" preload="auto"></audio>
+  <audio id="zee-ow" src="sounds/ir_begin.wav" preload="auto"></audio>
+
+  <svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg>
+
+  <div id="explanation-txt">
+    <h4>Create a circle by clicking the mouse. The longer you hold the button down, the larger the circle.</h4>
+    <h4>Click while holding down shift / ctrl / alt to give a circle strength to withstand collisions with other circles.</h4>
+    <h4>For an extra-strength circle, click the mouse wheel.</h4>
+  </div>
+
+  <script type="text/javascript">
+
+    //  Our global playground object
+    var playground = new PlayGround();
+
+  </script>
+  
+</body>
+</html>
